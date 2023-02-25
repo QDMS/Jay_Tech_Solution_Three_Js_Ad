@@ -1,0 +1,29 @@
+{
+  "name": "spaceintro",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "parcel build index.html",
+    "preview": "vite preview",
+    "start": "parcel index.html --open"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1",
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.20.7",
+    "dat.gui": "^0.7.9",
+    "imports-loader": "^4.0.1",
+    "jthreebsp": "^1.0.0",
+    "postprocessing": "^6.29.3",
+    "reset-css": "5.0.1",
+    "three": "^0.148.0",
+    "three-nebula": "^10.0.3",
+    "three-particle-fire": "^0.1.0",
+    "threebsp": "^1.0.4"
+  }
+}
