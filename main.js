@@ -192,7 +192,7 @@ ball2.rotation.y = 0;
 ball2.rotation.x = -380.1;
 
 let rocketLoader = new GLTFLoader();
-rocketLoader.load("./rocket.gltf", (gltf) => {
+rocketLoader.load("/rocket.gltf", (gltf) => {
   const rocket = gltf.scene;
   gltf.scene = rocket;
   gltf.scene.scale.multiplyScalar(7 / 250);
@@ -206,7 +206,7 @@ rocketLoader.load("./rocket.gltf", (gltf) => {
 // Logo Plane
 
 let logoLoader = new THREE.TextureLoader();
-logoLoader.load("./logo1.png", function (texture) {
+logoLoader.load("/logo1.png", function (texture) {
   const planeGeo = new THREE.PlaneGeometry(45, 30, 30, 30);
   const planeMaterial = new THREE.MeshLambertMaterial({
     color: 0xffffff,
