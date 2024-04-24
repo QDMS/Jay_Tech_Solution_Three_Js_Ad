@@ -134,7 +134,7 @@ let loader = new THREE.TextureLoader();
 loader.load(
   "https://raw.githubusercontent.com/navin-navi/codepen-assets/master/images/smoke.png",
   function (texture) {
-    const cloudGeo = new THREE.PlaneBufferGeometry(500, 500);
+    const cloudGeo = new THREE.PlaneGeometry(500, 500);
     const cloudMaterial = new THREE.MeshLambertMaterial({
       map: texture,
       transparent: true,
