@@ -63,7 +63,7 @@ const audioLoader = new THREE.AudioLoader();
 
 const backgroundSound = new THREE.Audio(listener);
 
-audioLoader.load("/music.mp3", function (buffer) {
+audioLoader.load("/audio/music.mp3", function (buffer) {
   backgroundSound.setBuffer(buffer);
   backgroundSound.setLoop(true);
   backgroundSound.setVolume(0.4);
@@ -173,7 +173,7 @@ ball.rotation.y = -0.15;
 ball.rotation.x = 1.1;
 
 let ball2Loader = new THREE.TextureLoader();
-const texture = ball2Loader.load("./Fire.png");
+const texture = ball2Loader.load("/img/Fire.png");
 const ballGeo2 = new THREE.ConeGeometry(35, 75, 65);
 const ballMaterial2 = new THREE.MeshPhongMaterial({
   map: texture,
@@ -192,7 +192,7 @@ ball2.rotation.y = 0;
 ball2.rotation.x = -380.1;
 
 let rocketLoader = new GLTFLoader();
-rocketLoader.load("/rocket.gltf", (gltf) => {
+rocketLoader.load("/img/rocket.gltf", (gltf) => {
   const rocket = gltf.scene;
   gltf.scene = rocket;
   gltf.scene.scale.multiplyScalar(7 / 250);
@@ -206,7 +206,7 @@ rocketLoader.load("/rocket.gltf", (gltf) => {
 // Logo Plane
 
 let logoLoader = new THREE.TextureLoader();
-logoLoader.load("/logo1.png", function (texture) {
+logoLoader.load("/img/logo1.png", function (texture) {
   const planeGeo = new THREE.PlaneGeometry(45, 30, 30, 30);
   const planeMaterial = new THREE.MeshLambertMaterial({
     color: 0xffffff,
